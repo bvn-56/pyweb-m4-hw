@@ -3,7 +3,7 @@ prophecies_url= "http://sf-pyw.mosyag.in/m04/api/forecasts"
 
 $("#main-header").click(function() {
 	$.getJSON(prophecies_url, function(data) {
-		
+		console.log('XO-XO-1')
 		prophecies=data["prophecies"]
 		set_content_in_divs(prophecies);
 	});
